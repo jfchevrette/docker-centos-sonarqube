@@ -1,4 +1,4 @@
-FROM centos:7 
+FROM registry.centos.org/centos/centos:7 
 
 MAINTAINER Red Hat Systems Engineering <refarch-feedback@redhat.com>
 
@@ -14,7 +14,7 @@ ENV SONAR_VERSION=6.1 \
 
 LABEL Name="sonarqube" \
       Vendor="SonarSource" \
-      Version="6.1-rhel7" \
+      Version="6.1-centos7" \
       summary="SonarQube" \
       description="SonarQube" \
       RUN='docker run -di \
