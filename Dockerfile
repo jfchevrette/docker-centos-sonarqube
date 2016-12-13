@@ -1,6 +1,6 @@
 FROM registry.centos.org/centos/centos:7 
 
-MAINTAINER Red Hat Systems Engineering <refarch-feedback@redhat.com>
+MAINTAINER Jean-Francois Chevrette  <jfchevrette@gmail.com>
 
 ENV SONAR_VERSION=6.1 \
     SONAR_USER=sonarsrc \
@@ -26,7 +26,7 @@ LABEL Name="sonarqube" \
 
 LABEL io.k8s.description="SonarQube" \
       io.k8s.display-name="SonarQube" \
-      io.openshift.build.commit.author="Red Hat Systems Engineering <refarch-feedback@redhat.com>" \
+      io.openshift.build.commit.author="Jean-Francois Chevrette <jfchevrette@gmail.com>" \
       io.openshift.expose-services="9000:9000" \
       io.openshift.tags="SonarQube,sonarqube,sonar"
 

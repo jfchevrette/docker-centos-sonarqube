@@ -2,7 +2,7 @@ version: "2"
 
 services:
   sonarqube:
-    image: sonarqube:6.1-rhel7
+    image: sonarqube:6.1-centos7
     container_name: sonarqube
     depends_on:
       - db
@@ -20,7 +20,7 @@ services:
 #      - $SONARQUBE_HOME/lib/bundled-plugins:$SONARQUBE_HOME/lib/bundled-plugins
 
   db:
-    image: registry.access.redhat.com/rhscl/postgresql-94-rhel7
+    image: registry.centos.org/mohammedzee1000/postgresql:9.4
     container_name: db
     networks:
       - sonarnet

@@ -13,12 +13,12 @@ parameters:
 - name: SONARQUBE_SOURCE_REPOSITORY
   displayName: SonarQube source repository location
   description: The name of the SonarQube source repository to build a SonarQube conatiner image.
-  value: git://github.com/RHsyseng/docker-rhel-sonarqube.git
+  value: git://github.com/jfchevrette/docker-centos-sonarqube.git
   required: true
 - name: SONARQUBE_OUTPUT_IMAGESTREAM
   displayName: SonarQube ImageStream
   description: The name of the ImageStream to put the SonarQube conatiner image to.
-  value: sonarqube:6.1-rhel7
+  value: sonarqube:6.1-centos7
   required: true
 - name: GITHUB_TRIGGER_SECRET
   displayName: Github webhook secret
